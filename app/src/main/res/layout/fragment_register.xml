@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_edit_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/linear_register"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_transparent_bg_dark"
+        android:hint="@string/email"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey_transparent_light"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_transparent_bg_dark"
+        android:drawableRight="@drawable/ic_hide"
+        android:hint="@string/password"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:inputType="textVisiblePassword"
+        android:textColorHint="@color/grey_transparent_light" />
+
+    <EditText
+        android:id="@+id/edit_text_repeat_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_transparent_bg_dark"
+        android:hint="@string/repeat_password"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:textColorHint="@color/grey_transparent_light" />
+</LinearLayout>

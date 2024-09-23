@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavedFragment"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:id="@+id/linear_saved">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textColor="@color/red"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/text_saved_concerts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saved Concerts"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_margin="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_saved_concerts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"/>
+
+
+
+</LinearLayout>
